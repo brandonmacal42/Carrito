@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Carrito</title>
+  </head>
+  <body>
+    <header>
+      <img src="img/logo.jpg" alt="" />
+      <i class="fas fa-shopping-cart"></i>
+    </header>
+    <div class="carrito Inactive">
+      <table>
+        <thead>
+          <tr class="elementos">
+            <th class="elementoM imagen">Imagen</th>
+            <th class="elementoM titulo">Nombre</th>
+            <th class="elementoM">Precio</th>
+            <th class="elementoM">Cantidad</th>
+            <th class="elementoM"></th>
+          </tr>
+        </thead>
+        <hr/>
+        <tbody id="tbodyCarrito">
+          
+        </tbody>
+      </table>
+
+      <button type="submit" id="vaciarCarrito">Vaciar carrito</button>
+    </div>
+    <nav>
+      <div class="container">
+        <p a>Aprende algo nuevo</p>
+        <p>Todos los cursos a $15</p>
+        <div>
+          <input placeholder="¿Que te gustaria aprender?" class="buscador" />
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+    </nav>
+    <div class="barraRoja">
+      <div class="icono">
+        <img src="img/icono1.png" alt="" />
+        <p>20,000 cursos en linea <br />Explora los cursos mas recientes</p>
+      </div>
+      <div class="icono">
+        <img src="img/icono2.png" alt="" />
+        <p>
+          Introductores expertos <br />
+          Aprende con distintos estilos
+        </p>
+      </div>
+      <div class="icono">
+        <img src="img/icono3.png" alt="" />
+        <p>
+          Accede de por vida <br />
+          Aprende a tu ritmo
+        </p>
+      </div>
+    </div>
+    <main>
+      <h4>cursos en linea</h4>
+      <div class="cursos">
+        <div class="curso">
+          <img src="img/curso1.jpg" alt="" />
+          <div class="info">
+            <p a>HTML-5, CSS3, Javascript para Principiantes</p>
+            <p b>Juan Pedro</p>
+            <img src="img/estrellas.png" alt="" />
+            <div class="oferta">
+              <span a>$200</span>
+              <span b>$15</span>
+            </div>
+            <button class='agregarCarrito' data-id="1">AGREGAR AL CARRITO</button>
+          </div>
+        </div>
+        <div class="curso">
+          <img src="img/curso2.jpg" alt="" />
+          <div class="info">
+            <p a>Curso de Comida Vegetariana  </p>
+            <p b>Juan Pedro</p>
+            <img src="img/estrellas.png" alt="" />
+            <div class="oferta">
+              <span a>$200</span>
+              <span b>$15</span>
+            </div>
+            <button class='agregarCarrito' data-id="2">AGREGAR AL CARRITO</button>
+          </div>
+        </div>
+        <div class="curso">
+          <img src="img/curso3.jpg" alt="" />
+          <div class="info">
+            <p a>Guitarra para Principiantes</p>
+            <p button>Juan Pedro</p>
+            <img src="img/estrellas.png" alt="" />
+            <div class="oferta">
+              <span a>$200</span>
+              <span b>$15</span>
+            </div>
+            <button class='agregarCarrito' data-id="3">AGREGAR AL CARRITO</button>
+          </div>
+        </div>
+        <div class="curso">
+          <img src="img/curso4.jpg" alt="" />
+          <div class="info">
+            <p a>Huerto en tu casa</p>
+            <p b>Juan Pedro</p>
+            <img src="img/estrellas.png" alt="" />
+            <div class="oferta">
+              <span a>$200</span>
+              <span b>$15</span>
+            </div>
+            <button class='agregarCarrito' data-id="4">AGREGAR AL CARRITO</button>
+          </div>
+        </div>
+        <div class="curso">
+          <img src="img/curso5.jpg" alt="" />
+          <div class="info">
+            <p a>Decoracion de productos en el hogar</p>
+            <p b>Juan Pedro</p>
+            <img src="img/estrellas.png" alt="" />
+            <div class="oferta">
+              <span a>$200</span>
+              <span b>$15</span>
+            </div>
+            <button class='agregarCarrito' data-id="5">AGREGAR AL CARRITO</button>
+          </div>
+        </div>
+        <div class="curso">
+          <img src="img/curso1.jpg" alt="" />
+          <div class="info">
+            <p a>Diseño web para Principiantes</p>
+            <p b>Juan Pedro</p>
+            <img src="img/estrellas.png" alt="" />
+            <div class="oferta">
+              <span a>$200</span>
+              <span b>$15</span>
+            </div>
+            <button class='agregarCarrito' data-id="6">AGREGAR AL CARRITO</button>
+          </div>
+        </div>
+        <div class="curso">
+          <img src="img/curso3.jpg" alt="" />
+          <div class="info">
+            <p a>Curso de Guitarra Avanzado</p>
+            <p b>Juan Pedro</p>
+            <img src="img/estrellas.png" alt="" />
+            <div class="oferta">
+              <span a>$200</span>
+              <span b>$15</span>
+            </div>
+            <button class='agregarCarrito' data-id="7">AGREGAR AL CARRITO</button>
+          </div>
+        </div>
+        <div class="curso">
+          <img src="img/curso2.jpg" alt="" />
+          <div class="info">
+            <p a>Curso de Comida Naturista</p>
+            <p b>Juan Pedro</p>
+            <img src="img/estrellas.png" alt="" />
+            <div class="oferta">
+              <span a>$200</span>
+              <span b>$15</span>
+            </div>
+            <button class='agregarCarrito' data-id="8">AGREGAR AL CARRITO</button>
+          </div>
+        </div>
+        <div class="curso">
+          <img src="img/curso4.jpg" alt="" />
+          <div class="info">
+            <p a>Curso de Hidroponia</p>
+            <p b>Juan Pedro</p>
+            <img src="img/estrellas.png" alt="" />
+            <div class="oferta">
+              <span a>$200</span>
+              <span b>$15</span>
+            </div>
+            <button class='agregarCarrito' data-id="9">AGREGAR AL CARRITO</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="main3.js"></script>
+  </body>
+</html>

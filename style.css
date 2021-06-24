@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+
+}
+html,
+body {
+  height: 200%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+header {
+  margin: 25px 0;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+header img {
+  cursor: pointer;
+}
+.fa-shopping-cart {
+  font-size: 25px;
+  cursor: pointer;
+  color: rgb(77, 76, 76);
+}
+nav {
+  background: url(img/hero.jpg) no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  height: 410px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.container p {
+  margin: 20px 0;
+}
+.container p[a]{
+		font-size: 35px;
+}
+
+
+.buscador {
+  position: relative;
+	width: 50%;
+	height: 40px;
+	font-size: 18px;
+  border: 0;
+}
+.fa-search{
+  position: absolute;
+  float:right;
+  color: #fd484c;
+  transform: translate(-50px , -10px);
+  cursor: pointer;
+  font-size: 20px;
+  padding: 20px;
+}
+.barraRoja {
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(
+    90deg,
+    rgba(213, 21, 110, 1) 0%,
+    rgba(156, 19, 90, 1) 30%,
+    rgba(154, 19, 68, 1) 44%,
+    rgba(164, 40, 71, 1) 54%,
+    rgba(221, 47, 47, 1) 98%
+  );
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.icono {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 50px;
+}
+.icono img {
+  width: 30px;
+  margin: 0 25px;
+}
+main {
+  padding: 30px 0;
+  width: 100%;
+  background: #f5f0f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h4 {
+  text-transform: capitalize;
+  color: #000;
+  font-size: 50px;
+  font-weight: 200;
+  text-align: center;
+}
+.cursos {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 60%;
+}
+.curso {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #f5f0f1;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+
+  margin: 20px;
+}
+.info p{
+  margin: 7px 0;
+}
+.info p[a]{
+  font-weight: bold;
+  font-size: 20px;
+}
+.info img{
+  width: 30%;
+  margin: 10px 0;
+}
+.oferta{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+
+}
+.oferta span{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.oferta span[a]{
+  text-decoration: line-through;
+  font-size: 18px;
+  font-weight: normal
+}
+.info button{
+  width: 70%;
+  height: 50px;
+  background: #30b5ed;
+  border-radius: 5px;
+  border: 0;
+  color: #fff;
+  align-self: center;
+  cursor: pointer;
+}
+
+@keyframes UptoDown {
+  from {transform :translate(400px,-200px)}
+  to {transform: translate(400px , 80px);}
+}
+@keyframes DowntoUp{
+  from {transform: translate(400px , 80px);}
+}
+
+.carrito{
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  background: #fff;
+  transform: translate(400px,80px);
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform .3s;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.Inactive{
+  transform :translate(400px,-1200px);
+}
+
+
+
+.elementos{
+  display: flex;
+  margin: 10px 0px 5px 0px;
+  justify-content:center;
+}
+.elementoM{
+  width: 80px;
+  text-align: center;
+
+}
+.elemento{
+  width:80px;
+  margin:0;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  text-align: center;
+}
+
+.titulo{
+  width:125px;
+   margin-left:5px;
+   margin-right:-5px
+}
+.imagen{
+  width:110px
+}
+.carrito hr{
+color: rgb(246, 238, 238,.5  );
+width:450px;
+position: absolute;
+transform: translateY(40px);
+}
+.carrito button{
+  width: 300px;
+  height: 50px; 
+  background: transparent;
+  border: 1px solid rgb(146, 144, 144);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.cross{
+  cursor: pointer;
+  font-size: 20px;
+  transition: color .2s;
+  transform: translate(0px -300px);
+}
+.cross:hover{
+  color: rgb(255, 22, 22)
+}
